@@ -6,6 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
+        
+        <!--<script src="{{asset('/assets/js/jquery.min.js')}}"></script>-->
+        <!--<script src="{{asset('/assets/js/bootstrap.min.js')}}"></script>-->
+
+        <!--<link rel="stylesheet" href="{{asset('/assets/css/bootstrap.min.css')}}" type="text/css" />-->
+        <!--<link rel="stylesheet" href="{{asset('/assets/css/style.css')}}" type="text/css" />-->
+
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">

@@ -10,7 +10,27 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Book;
+use Illuminate\Http\Request;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// 本ダッシュボード表示
+Route::get('/', 'BooksController@index');
+
+// 新本 追加
+Route::post('/books', 'BooksController@store');
+
+// 更新画面
+Route::post('/booksedit/{books}', 'BooksController@edit');
+// Route::get('/booksedit/{books}', 'BooksController@edit');
+
+// 更新処理
+Route::post('/books/update', 'BooksController@update');
+
+// 本を削除
+Route::delete('/book/{book}', 'BooksController@destroy');
+
+
+Auth::routes();
+
+Route::get('/home', 'BooksController@index')->name('home');
+// Route::get('/home', 'BooksController@index');
