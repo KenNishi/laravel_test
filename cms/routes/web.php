@@ -34,3 +34,5 @@ Auth::routes();
 
 Route::get('/home', 'BooksController@index')->name('home');
 // Route::get('/home', 'BooksController@index');
+
+Route::resource("tasks","TaskController"); // Add this line in routes.php
